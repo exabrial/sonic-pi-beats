@@ -97,9 +97,9 @@ define :chord_thing do
         chord_player :d3, 2
         sleep 1
         chord_player :d3, 1
-        sleep 1
-        chord_player :e3, 5
         sleep 1.5
+        chord_player :e3, 5
+        sleep 1
       end
     end
   end
