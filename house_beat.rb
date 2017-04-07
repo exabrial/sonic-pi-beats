@@ -46,10 +46,17 @@ live_loop :offset_hats do
   sleep 0.5
 end
 
-live_loop :emphasis_hat do
+live_loop :moving_high_hat do
   # add offset highhat that moves cyclicaly around the beat every 4 measures
   sleep 3.25
   sample :drum_cymbal_closed
+end
+
+live_loop :emphasis_hat do
+  # add extra high hat that falls regularly
+  sleep 3.75
+  sample :drum_cymbal_closed
+  sleep 1.25
 end
 
 live_loop :mark8 do
