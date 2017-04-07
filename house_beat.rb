@@ -90,7 +90,6 @@ define :chord_thing do
   with_fx :reverb do
     with_fx :reverb do
       with_fx :reverb do
-        # total beats: 12
         chord_player :e3, 4
         sleep 1
         chord_player :a3, 1
