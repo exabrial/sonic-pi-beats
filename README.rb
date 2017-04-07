@@ -115,8 +115,8 @@ live_loop :mark16 do
 end
 
 live_loop :mark128 do
-  sleep 126
+  sleep 127
   sample :ambi_lunar_land
-  sleep 2
+  sleep 1
 end
 
