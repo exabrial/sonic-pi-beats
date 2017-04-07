@@ -99,8 +99,8 @@ define :chord_thing do
         sleep 1
         chord_player :d3, 1
         sleep 1
-        chord_player :e3, 4
-        sleep 1
+        chord_player :e3, 5
+        sleep 1.5
       end
     end
   end
@@ -109,7 +109,7 @@ end
 live_loop :chords_loop do
   sleep 1
   chord_thing
-  sleep 4
+  sleep 3
 end
 
 live_loop :mark128 do
