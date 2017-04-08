@@ -78,17 +78,21 @@ live_loop :mark8 do
 end
 
 live_loop :mark16 do
-  sleep 15
-  sample :ambi_soft_buzz
-  sleep 1
+  with_fx :level, amp: 0.85 do
+    sleep 15
+    sample :ambi_soft_buzz
+    sleep 1
+  end
 end
 
 live_loop :mark32 do
-  sleep 31
-  with_fx :reverb do
-    sample :ambi_haunted_hum
+  with_fx :level, amp: 0.65 do
+    with_fx :reverb, room: 0.85 do
+      sleep 31
+      sample :ambi_haunted_hum
+      sleep 1
+    end
   end
-  sleep 1
 end
 
 define :chord_player do |root, repeats|
@@ -99,7 +103,7 @@ define :chord_player do |root, repeats|
 end
 
 define :chord_thing do
-  with_fx :reverb, room:1 do
+  with_fx :reverb, room: 1.0 do
     # total beats: 12
     # you can move the timings around
     # as long as the count doesn't exceed 12
@@ -123,8 +127,10 @@ live_loop :mark16 do
 end
 
 live_loop :mark128 do
-  sleep 126
-  sample :ambi_lunar_land
-  sleep 2
+  with_fx :level, amp: 1.25 do
+    sleep 126
+    sample :ambi_lunar_land
+    sleep 2
+  end
 end
 
