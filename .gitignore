@@ -1,0 +1,92 @@
+/tribestream-tag-console/tribestream-tag-console-ui/typings
+# Java #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# IDEA #
+*.iml
+.idea
+*~
+
+# eclipse specific git ignore
+.project
+.metadata
+.classpath
+.checkstyle
+.settings/
+.checkstyle
+
+# Maven files #
+data/
+target
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Misc #
+*.log
+.DS_Store
+
+global.wadl.zip
+wadl.zip
+
+# Vaadin generated stuff, could be excluded through maven hack too
+widgetsets
+gwt-unitCache
+
+wadlcache/
+wadl/
+webapp/tribestream-registry/src/main/webapp/VAADIN/themes/tribestream/styles.css
+*.odt#
+
+# JRebel config files #
+rebel.xml
+
+itests/itests-repogistry/log.txt
+
+*.rsa
+
+*.p12
+
+dependency-reduced-pom.xml
+
+.alm
+npm-debug.log*
+
+tribestream-oauth2/conf/openejb.xml
+tribestream-oauth2/conf/login.config
+tribestream-oauth2/conf/groups.properties
+tribestream-oauth2/conf/users.properties
+tribestream-oauth2/conf/conf.d/cxf-rs.properties
+tribestream-oauth2/conf/conf.d/httpejbd.properties
+tribestream-oauth2/conf/tag.jks
+tribestream-oauth2/conf/test.jks
+
+tomee/conf-itests-security/clientStore.jks
+tomee/conf-itests-security/serverStore.jks
+
+
+bower_components
+node_modules
+tribestream-tag-console/tribestream-tag-console-ui/dist
+tribestream-tag-console/tribestream-tag-console-ui/typings
+tribestream-tag-console/tribestream-tag-console-ui/src/main/static/typings
+
+tribestream-governance-itest/work
+
+tribestream-container/work
+
+
+tribestream-docs/src/main/resources/docs/tribestream-proxy-failover-study*.png
+tribestream-docs/src/main/resources/docs/tribestream-proxy-failover-study*.png.cache
+
+tribestream-tag-console/tribestream-tag-console-ui/src/main/static/webpack/webpack.config.dev-instance.js
+
+ContainerTestBase-*
+temp
